@@ -1,0 +1,17 @@
+/*sass --watch style.scss style.css*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+  width: 1024px;
+}
+
+header {
+  background: url("./ressources/fonds/gayflagkeybord.jpg");
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
