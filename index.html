@@ -24,7 +24,6 @@
     </script>
     <script>
         function MyFunc(){
-            alert("Bien envoyé !")
         dataLayer.push({
             'event':'RemyEvent',
             'eventCategory': 'Utilisateur',
@@ -311,7 +310,9 @@
             </div>
         </div>
     </section>
+<section class="parallax-container">
 
+</section>
 
     <!--
 
@@ -354,12 +355,12 @@
 -->
     <footer>
         <div class="row amber darken-1 col s12 text-#ffd8a6">
-            
-            <img class="responsive-img" src="./ressources/photos/id2.jpg"><h2 class="right">Contactez moi !</h2>
+            <h2>Contactez moi !</h2>
+            <img class="responsive-img circle small left" src="./ressources/photos/id2.jpg">
 
-            <form onsubmit="MyFunc"() class="center col" action="https://formspree.io/remy.ramora@coding-academy.fr" method="POST">
-                Nom : <input type="text" name="name">
-                E-mail <input type="email" name="_replyto">
+            <form onsubmit="MyFunc();" class="col" action="https://formspree.io/remy.ramora@coding-academy.fr" method="POST">
+                Nom : <input type="text" name="name" required>
+                E-mail <input type="email" name="_replyto" required>
                 <input type="submit" value="Send">
             </form>
         </div>
