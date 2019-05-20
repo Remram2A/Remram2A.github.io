@@ -2,26 +2,37 @@
 <html lang="fr">
 
 <head>
-        <script>
-                //Static DataLayer//
-                var dataLayer = [{}];
-            </script>
-            <script>
-                (function (w, d, s, l, i) {
-                    w[l] = w[l] || [];
-                    w[l].push({
-                        'gtm.start': new Date().getTime(),
-                        event: 'gtm.js'
-                    });
-                    var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s),
-                        dl = l != 'dataLayer' ? '&l=' + l : '';
-                    j.async = true;
-                    j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                    f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-M9RMMTH');
-            </script>
+    <script>
+        //Static DataLayer//
+        var dataLayer = [{}];
+    </script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M9RMMTH');
+    </script>
+    <script>
+        function MyFunc(){
+        dataLayer.push({
+            'event':'RemyEvent',
+            'eventCategory': 'Utilisateur',
+            'eventAction': 'Formulaire de contact',
+            'eventLabel': 'Message envoyé',
+            'eventValue': '1'
+        });
+    }
+    </script>
     <title>Mon portfolio</title>
     <meta charset="utf-8">
     <meta name="description" content="165c. uniques">
@@ -35,7 +46,6 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
- 
 </head>
 
 <body>
@@ -343,9 +353,16 @@
 -->
     <footer>
         <div class="card small amber darken-1 col s12 text-#ffd8a6">
-            <h2 class="center">Mes compétences digitales</h2>
-        </div>
+            <h2 class="center">Contactez moi !</h2>
 
+            <img class="responsive-img" src="./ressources/photos/id2.jpg">
+
+            <form onsubmit="MyFunc"() class="center" action="https://formspree.io/remy.ramora@coding-academy.fr" method="POST">
+                Nom : <input type="text" name="name">
+                E-mail <input type="email" name="_replyto">
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </footer>
     </div>
 
