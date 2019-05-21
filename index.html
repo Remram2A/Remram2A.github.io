@@ -23,7 +23,8 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M9RMMTH');
     </script>
     <script>
-        function MyFunc(){
+        function MyFunc(e){
+            e.preventDefault();
             alert("lol");
         dataLayer.push({
             'event':'RemyEvent',
@@ -64,7 +65,8 @@
 
         <div class="parallax-container">
             <div class="parallax Solidays"><img class="responsive-img"
-                    src="./ressources/photos/PortfolioTof/Solidays.jpg"></div>
+                    src="./ressources/photos/PortfolioTof/Solidays.jpg"><img class="responsive-img victorHugo"
+                    src="./ressources/photos/PortfolioTof/VictorHugo.png"></div>
         </div>
         <div class="section white center col">
             <div class="row container">

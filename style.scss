@@ -8,6 +8,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     }*/
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
 .Solidays {
     position: fixed !important;
     width: 100% !important;
@@ -15,17 +22,18 @@
     top: 65px !important;
     left: 0px !important;
     z-index: -2 !important;
+    opacity: 1;
 }
 
-.VictorHugo {
-    background-image: url("./ressources/photos/PortfolioTof/VictorHugo.png");
-    position: absolute;
+.victorHugo {
+    /*background-image: url("./ressources/photos/PortfolioTof/VictorHugo.png");*/
+    position: unset;
     left: 3126px;
     top: 1079px;
     width: 868px;
     height: 547px;
-    z-index: -1;
-  }
+    z-index: 2;
+}
 
 .parallax-container {
     height: 600px;
@@ -56,6 +64,3 @@ h3 {
     width: 80%;
     margin: auto;
 }
-
-
-  
