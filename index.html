@@ -23,17 +23,17 @@
         })(window, document, 'script', 'dataLayer', 'GTM-M9RMMTH');
     </script>
     <script>
-        function MyFunc(e){
+        function MyFunc(e) {
             e.preventDefault();
             alert("lol");
-        dataLayer.push({
-            'event':'RemyEvent',
-            'eventCategory': 'Utilisateur',
-            'eventAction': 'Formulaire de contact',
-            'eventLabel': 'Message envoyé',
-            'eventValue': '1'
-        });
-    }
+            dataLayer.push({
+                'event': 'RemyEvent',
+                'eventCategory': 'Utilisateur',
+                'eventAction': 'Formulaire de contact',
+                'eventLabel': 'Message envoyé',
+                'eventValue': '1'
+            });
+        }
     </script>
     <title>Mon portfolio</title>
     <meta charset="utf-8">
@@ -68,10 +68,27 @@
                     src="./ressources/photos/PortfolioTof/Solidays.jpg"><img class="responsive-img victorHugo"
                     src="./ressources/photos/PortfolioTof/VictorHugo.png"></div>
         </div>
-        <div class="section white center col">
+        
+        <div class="amber darken-1 parallax-container">
             <div class="row container">
-                <h2 class="header">Qui suis-je ?</h2>
-                <p class="grey-text text-darken-3 lighten-3">
+                <h2 class="header white-text">Mes expériences Pro en timeline</h2>
+                <p class="white-text">
+                    Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed
+                    natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius
+                    fructus in ipso amore inest, expetendam putamus.</p>
+            </div>
+            
+
+
+        </div>
+        
+
+
+
+        <div class="parallax-container">
+            <div class="row container">
+                <h2 class="header white-text">Qui suis-je ?</h2>
+                <p class="white-text lighten-3">
                     Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed
                     natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius
                     fructus in ipso amore inest, expetendam putamus.</p>
@@ -81,19 +98,22 @@
             <div class="slider">
                 <ul class="slides">
                     <li>
-                        <img class="responsive-img" src="./ressources/photos/PortfolioTof/ADMD.jpg">
+                        <img class="responsive-img materialboxed" src="./ressources/photos/PortfolioTof/ADMD.jpg" alt="Rémy RAMORA avec max, la mascotte ours ADMD">
                         <!-- random image -->
                         <div class="caption center-align">
-                            <h3>Militant ADMD</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <a href="https://www.facebook.com/admd.france/videos/476849163058538/"><img class="responsive-img logosSlider left" src="ressources/logos/ADMD.jpg" alt="logo ADMD"></a>
+                            <h2 class="amber-text"><strong>Militant ADMD</strong></h2>
+                            <q class="light grey-text text-lighten-3 flow-text"><strong>“Il n’y a pas de principe supérieur dans notre République qui oblige les patients en fin de vie à vivre leurs souffrances jusqu’au bout.”</strong>cd</q> 
+                            
                         </div>
                     </li>
                     <li>
                         <img src="./ressources/photos/PortfolioTof/Théâtre.png">
                         <!-- random image -->
                         <div class="caption center-align">
-                            <h3>Comédien Amateur</h3>
-                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <a href="https://www.courspaulclement.fr/"><img class="responsive-img logosSlider left" src="ressources/logos/CoursClement.png" alt="logo Cours Paul Clément"></a>
+                            <h2 class="red-text"><strong>Comédien Amateur</strong></h2>
+                            <q class="light grey-text text-lighten-3">"Le monde entier est un théâtre, Et tous, hommes et femmes, n'en sont que les acteurs. Et notre vie durant nous jouons plusieurs rôles.<br>William Shakespeare"</q>
                         </div>
                     </li>
                     <li>
@@ -117,15 +137,7 @@
         </div>
 
     </div>
-    <div class="parallax-container">
-        <div class="row container">
-            <h2 class="header">Mes expériences Pro en timeline</h2>
-            <p class="grey-text text-darken-3 lighten-3">
-                Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed
-                natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius
-                fructus in ipso amore inest, expetendam putamus.</p>
-        </div>
-    </div>
+   
     <div class="parallax-container">
         <div class="parallax">
             <h2 class="header">Mes projets</h2>
@@ -239,7 +251,7 @@
                 <div class="col s2 center">
                     <div class="card-image hoverable responsive-img">
                         <i>HTML</i><br>
-                        <i class="fab fa-html5 fa-3x"></i>
+                        <!-- <a href="https://www.w3.org/html/">--><i class="fab fa-html5 fa-3x"></i></a>
                     </div>
                 </div>
                 <div class="col s2 center">
@@ -255,9 +267,9 @@
                     </div>
                 </div>
                 <div class="col s2 center">
-                    <div class="card-image hoverable responsive-img">
+                    <div class="card-image  responsive-img">
                         <i>PHP</i><br>
-                        <i class="fab fa-php fa-3x"></i>
+                        <i class="fab fa-php fa-3x hoverable"></i>
                     </div>
                 </div>
                 <div class="col s2 center">
@@ -269,21 +281,21 @@
                 <div class="col s2 center">
                     <div class="card-image hoverable responsive-img">
                         <i>Less</i><br>
-                        <i class="fab fa-less fa-3x hoverable"></i>
+                        <i class="fab fa-less fa-2x"></i>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col s2 center">
                     <div class="card-image hoverable responsive-img">
-                        <i>Opquast</i><br>
-                        <i class="fab fa-html5 fa-3x"></i>
+                        <i>Certification Opquast</i><br>
+                        <i class="fas fa-certificate fa-2x"></i>
                     </div>
                 </div>
                 <div class="col s2 center">
                     <div class="card-image hoverable responsive-img">
-                        <i>CSS</i><br>
-                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <i>Google Analytics</i><br>
+                        </i><i class="fas fa-chart-line fa-3x"></i>
                     </div>
                 </div>
                 <div class="col s2 center">
@@ -313,9 +325,9 @@
             </div>
         </div>
     </section>
-<section class="parallax-container">
+    <section class="parallax-container">
 
-</section>
+    </section>
 
     <!--
 
@@ -361,9 +373,12 @@
             <h2>Contactez moi !</h2>
             <img class="responsive-img circle small left" src="./ressources/photos/id2.jpg">
 
-            <form onsubmit="MyFunc();" class="col" action="https://formspree.io/remy.ramora@coding-academy.fr" method="POST">
-                Nom : <input type="text" name="name" required>
+            <form onsubmit="MyFunc(e);" class="col" action="https://formspree.io/remy.ramora@coding-academy.fr"
+                method="POST">
+                "A finaliser nom prenom, société/fonction, tel, mail, message" : <input type="text" name="name"
+                    required>
                 E-mail <input type="email" name="_replyto" required>
+
                 <input type="submit" value="Send">
             </form>
         </div>
