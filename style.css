@@ -14,10 +14,8 @@
 }
 .Solidays {
   position: fixed !important;
-  top: -10px !important;
-  left: 0px !important;
-  z-index: -2 !important;
-  opacity: 1;
+  margin-top: -10px !important;
+  top: -4% !important;
 }
 
 .victorHugo {
@@ -31,7 +29,7 @@
 }
 
 .parallax-container {
-  height: 650px;
+  height: 750px;
 }
 
 .card-title {
@@ -62,8 +60,33 @@ h3 {
 .logosSlider {
   width: 10vw !important;
   height: 10vh !important;
+  margin: auto !important;
+}
+
+.collapsible {
+  width: 60vw;
   margin: auto;
-  left: 5px;
+  justify-content: space-between;
+}
+
+.collapsible-header {
+  justify-content: space-between;
+  padding: 1%;
+}
+.collapsible-header span {
+  width: 33.3%;
+}
+
+.collapseLogos {
+  height: 9vh;
+}
+
+footer {
+  padding: 5%;
+  margin-bottom: 0px !important;
+}
+footer img {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
