@@ -18,7 +18,14 @@
 }
 .Solidays {
   position: fixed !important;
-  top: 9% !important;
+  top: 7.5% !important;
+}
+
+.RespText {
+  width: 20%;
+  height: 15%;
+  top: 43% !important;
+  left: 38% !important;
 }
 
 .victorHugo {
@@ -85,6 +92,10 @@ caption {
 
 .collapseLogos {
   height: 9vh;
+}
+
+.margin {
+  left: 50%;
 }
 
 footer {

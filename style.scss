@@ -20,10 +20,15 @@
 
 .Solidays {
     position: fixed !important;
-    top:9% !important;
+    top:7.5% !important;
 }
 
-
+.RespText{
+    width: 20%;
+    height: 15%;
+    top: 43% !important;
+    left: 38% !important;
+}
 
 .victorHugo {
     /*background-image: url("./ressources/photos/PortfolioTof/VictorHugo.png");*/
@@ -94,7 +99,7 @@ caption{
     height: 9vh;
 }
 .margin{
-right:50% !important;
+    left: 50%;
 }
 
 footer{
